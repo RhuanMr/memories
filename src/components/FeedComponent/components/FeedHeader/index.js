@@ -1,7 +1,9 @@
 import React from "react";
-import { View, Text, TouchableOpacity} from "react-native";
-import Icon from "react-native-vector-icons/AntDesign";
+import { View, Text, TouchableOpacity, Image} from "react-native";
 import styles from "./styles";
+
+const plusCircle = require('../../../../assets/icons/plus-circle.png');
+const search = require('../../../../assets/icons/search.png');
 
 const FeedHeader = () => {
     return (
@@ -9,11 +11,11 @@ const FeedHeader = () => {
             <View style={styles.contentTitle}>
                 <Text style={styles.Title}>My memories</Text>
                 <TouchableOpacity style={styles.plusButton}>
-                    <Icon name="pluscircleo" color="#000" size={25} />
+                    <Image source={plusCircle}/>
                 </TouchableOpacity>
             </View>
             <TouchableOpacity style={styles.searchButton}>
-                <Icon name="search1" color="#000" size={25} />
+                <Image source={search}/>
             </TouchableOpacity>
         </View>
     );

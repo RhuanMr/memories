@@ -1,8 +1,9 @@
 import React from "react";
-import { View, Text, TouchableOpacity, ScrollView } from "react-native";
-import Icon from "react-native-vector-icons/Feather";
+import { View, Text, TouchableOpacity, ScrollView, Image } from "react-native";
 import COLORS from "../../../../styles/colors";
 import styles from "./styles";
+
+const edit = require("../../../../assets/icons/edit.png")
 
 const CardMemorie = (props) => {
     return (
@@ -18,7 +19,7 @@ const CardMemorie = (props) => {
                     <View style={styles.contentBottom} />
                 </View>
                 <TouchableOpacity style={styles.editButton}>
-                    <Icon name="edit" size={25} color={COLORS.TEXT} />
+                    <Image source={edit} />
                 </TouchableOpacity>
             </View>        
         </ScrollView>

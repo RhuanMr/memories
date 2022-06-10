@@ -1,7 +1,8 @@
 import React from "react";
-import { View, Text, TouchableOpacity, TouchableWithoutFeedback} from "react-native";
-import Icon from "react-native-vector-icons/Feather";
+import { View, Text, TouchableOpacity, TouchableWithoutFeedback, Image} from "react-native";
 import styles from "./styles";
+
+const edit = require('../../../../assets/icons/edit.png')
 
 const CardFeed = props => {
     return (
@@ -17,7 +18,7 @@ const CardFeed = props => {
                     <View style={styles.contentBottom} />
                 </View>
                 <TouchableOpacity style={styles.editButton} onPress={props.edit}>
-                    <Icon name="edit" size={25} color="#000" />
+                    <Image source={edit} />
                 </TouchableOpacity>
             </View>
         </TouchableWithoutFeedback>

@@ -7,6 +7,9 @@ const styles = StyleSheet.create({
     content: {
         flex: 1,
     },
+    ContainerCard: {
+        marginTop: '5%'
+    }
 });
 
 export default styles;
